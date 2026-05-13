@@ -13,7 +13,7 @@ async function addBook() {
     const author = document.getElementById('author').value;
     const description = document.getElementById('description').value;
 
-    // Wysłanie danych do tabeli 'books' w Supabase
+     // Wysłanie danych do tabeli 'books' w Supabase
     const { data, error } = await client
         .from('books')
         .insert([
