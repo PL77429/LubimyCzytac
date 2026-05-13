@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasza Biblioteka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>System zarządzania książkami</h1>
+
+    <!-- Sekcja formularza do dodawania nowej książki -->
+    <section>
+        <h2>Dodaj nową książkę</h2>
+        <form id="add-book-form">
+            <input type="text" id="book-title" placeholder="Tytuł książki" required>
+            <input type="text" id="book-author" placeholder="Autor" required>
+            <textarea id="book-desc" placeholder="Opis książki"></textarea>
+            <button type="submit">Dodaj</button>
+        </form>
+    </section>
+
+    <!-- Sekcja listy książek pobieranych z bazy danych -->
+    <section>
+        <h2>Lista książek</h2>
+        <ul id="books-list">
+            <!-- Tutaj JavaScript będzie dynamicznie wstawiać elementy <li> -->
+        </ul>
+    </section>
+
+    <!-- Dołączenie biblioteki Supabase oraz naszego pliku z logiką -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
