@@ -9,27 +9,25 @@
 <body>
     <h1>System zarządzania książkami</h1>
 
-    <!-- Sekcja formularza do dodawania nowej książki -->
+    <!-- Formularz do dodawania nowej książki -->
     <section>
         <h2>Dodaj nową książkę</h2>
-        <form id="add-book-form">
-            <input type="text" id="book-title" placeholder="Tytuł książki" required>
-            <input type="text" id="book-author" placeholder="Autor" required>
-            <textarea id="book-desc" placeholder="Opis książki"></textarea>
-            <button type="submit">Dodaj</button>
-        </form>
+        <input type="text" id="title" placeholder="Tytuł książki">
+        <input type="text" id="author" placeholder="Autor">
+        <input type="text" id="description" placeholder="Opis książki">
+        <button onclick="addBook()">Dodaj Book</button>
     </section>
 
     <!-- Sekcja listy książek pobieranych z bazy danych -->
     <section>
         <h2>Lista książek</h2>
         <ul id="books-list">
-            <!-- Tutaj JavaScript będzie dynamicznie wstawiać elementy <li> -->
+            <!-- Tutaj JavaScript będzie dynamicznie wstawiać elementy -->
         </ul>
     </section>
 
-    <!-- Dołączenie biblioteki Supabase oraz naszego pliku z logiką -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="app.js"></script>
+    <!-- Dołączenie biblioteki Supabase oraz skryptu z logiką -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
