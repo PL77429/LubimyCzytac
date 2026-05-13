@@ -1,4 +1,4 @@
-// Konfiguracja połączenia z bazą Supabase
+ // Konfiguracja połączenia z bazą Supabase
 const supabaseUrl = 'https://weiynsvckehxobqydick.supabase.co';
 const supabaseKey = 'sb_publishable_81u-_6ofRtmqaZr7k8da6w_ku-x2rEP';
 
