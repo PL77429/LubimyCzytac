@@ -57,7 +57,18 @@ async function getBooks() {
     // Dodanie każdej książki do listy HTML
     data.forEach(book => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${book.title} - ${book.author} (${book.description})`;
+// Używamy innerHTML, aby dodać formatowanie tekstowe do listy
+listItem.innerHTML = `
+    <div style="margin-bottom: 5px;">
+        <strong style="font-size: 18px; color: #1a1a1a;">${book.title}</strong>
+    </div>
+    <div style="font-size: 14px; color: #555; margin-bottom: 3px;">
+        <strong>Autor:</strong> ${book.author}
+    </div>
+    <div style="font-size: 14px; color: #777;">
+        <strong>Opis:</strong> ${book.description}
+    </div>
+`;
         list.appendChild(listItem);
     });
 }
