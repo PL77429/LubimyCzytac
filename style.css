@@ -16,6 +16,14 @@ h1, h2 {
     color: #1a1a1a;
 }
 
+/* Stylizacja głównego logo */
+.main-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 250px; 
+    height: auto;
+}
+
 /* Sekcje jako nowoczesne, białe karty z cieniem */
 section {
     background: white;
