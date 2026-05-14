@@ -1,9 +1,17 @@
 /* Główne style dla całej strony */
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f4f4f9;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    max-width: 900px;
 }
+
+h1,h2 {
+    border-bottom: 2 px solid #2e8b57;
+    padding-bottom: 5px;
+    text-align: center;
 
 /* Marginesy dla sekcji */
 section {
